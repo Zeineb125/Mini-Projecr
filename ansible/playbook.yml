@@ -1,1 +1,43 @@
+---
+- name: Deploy Application
+  hosts: dev  # Specify the target hosts/groups from inventory files
+  become: true  # If root privileges are required for deployment tasks
+
+  tasks:
+    - name: Copy application files to server
+      copy:
+        src: /path/to/local/application
+        dest: /path/on/server/application
+      # Add other tasks specific to your application deployment
+
+    # Additional tasks for configuration, setup, or starting the application
+    # ...
+
+- name: Deploy Application
+  hosts: test  # Specify the target hosts/groups from inventory files
+  become: true  # If root privileges are required for deployment tasks
+
+  tasks:
+    - name: Copy application files to server
+      copy:
+        src: /path/to/local/application
+        dest: /path/on/server/application
+      # Add other tasks specific to your application deployment
+
+    # Additional tasks for configuration, setup, or starting the application
+    # ...
+
+- name: Deploy Application
+  hosts: prd  # Specify the target hosts/groups from inventory files
+  become: true  # If root privileges are required for deployment tasks
+
+  tasks:
+    - name: Copy application files to server
+      copy:
+        src: /path/to/local/application
+        dest: /path/on/server/application
+      # Add other tasks specific to your application deployment
+
+    # Additional tasks for configuration, setup, or starting the application
+    # ...
 
