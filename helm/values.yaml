@@ -16,7 +16,7 @@ flaskapp:
   env: production
   image:
     registry: docker.io
-    repository: coolboi567/todo-flaskapp
+    repository: zeinebc/todo-flaskapp
     tag: latest
   imagePullPolicy: Always
   service:
