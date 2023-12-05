@@ -1,0 +1,2 @@
+prd_server1 ansible_host=192.168.1.301
+prd_server2 ansible_host=192.168.1.302
